@@ -26,6 +26,9 @@
     <link rel="stylesheet" href="scripts/magnific-popup/dist/magnific-popup.css">
     <link rel="stylesheet" href="scripts/sweetalert/dist/sweetalert.css">
     <!-- Custom style -->
+    <!-- DataTables -->
+    <link rel="stylesheet" href="bower_components/datatables.net-bs/css/dataTables.bootstrap.min.css">
+
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/skins/all.css">
     <link rel="stylesheet" href="css/demo.css">

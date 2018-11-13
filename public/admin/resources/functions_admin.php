@@ -101,15 +101,187 @@ function register_customer()
 }
 
 
+//***************************************************************************************************
+
+
+//***************************************************************************************************
+//admin dashboard
+
+//count for customer
+function count_customer(){
+
+    $query = query("SELECT * FROM users WHERE role='customer' AND instance_status = 'A'");
+    confirm($query);
+    $count_customer = 0;
+
+    while ($row = fetch_array($query)) {
+
+        $count_customer += 1;
+
+    }
+    echo $count_customer;
+}
+
+//count for beautician
+function count_beautician(){
+
+    $query = query("SELECT * FROM users WHERE role='beautician' AND instance_status = 'A'");
+    confirm($query);
+    $count_beautician = 0;
+
+    while ($row = fetch_array($query)) {
+
+        $count_beautician += 1;
+
+    }
+    echo $count_beautician;
+}
 
 
 
 
 
+//***************************************************************************************************
+//***************************************************************************************************
+//show all beautician
+
+function show_beautician_in_admin(){
+
+    $query = "SELECT * FROM users WHERE role = 'beautician' AND instance_status = 'A' ";
+    $beautician_query = query("$query");
+    confirm($beautician_query);
+
+    while($row = fetch_array($beautician_query)){
+
+        $users_id = $row['id'];
+        $name = $row['name'];
+        $email = $row['email'];
+        $role = $row['role'];
+        $pass = $row['pass'];
+        $phone = $row['phone'];
+
+        $beautician = <<<DELIMETER
 
 
+     <tr>
+            <td>{$name}</td>
+            <td>{$email}</td>
+            <td>{$phone}</td>
+            <td>
+                <div class="btn-group " >
+                    <button type="button" class="btn btn-success btn-xs dropdown-toggle" data-toggle="dropdown">
+                        <span class="caret"></span>
+                        <span class="sr-only">Toggle Dropdown</span>
+                    </button>
+                    <ul class="dropdown-menu" role="menu">
+                        <li><a href="profile_beautician.php?id=$users_id"><i class="fa fa-eye"></i> View Details</a></li>
+                        <li><a href="#"><i class="fa fa-edit"></i> Update</a></li>
+                        <li><a href="#"><i class="fa fa-navicon" ></i> Assign</a></li>
+                        <li class="divider" ></li>
+                        <li><a href="#" class="text-red" ><i class="fa fa-trash"></i> Delete</a></li>
+
+                    </ul>
+                </div>
+            </td>
+     </tr>
+DELIMETER;
+
+        echo $beautician;
+    }
+}
 
 
+//show all customer
 
+function show_customer_in_admin(){
+
+    $query = "SELECT * FROM users WHERE role = 'customer' AND instance_status = 'A'";
+    $customer_query = query("$query");
+    confirm($customer_query);
+
+    while($row = fetch_array($customer_query)){
+
+        $users_id = $row['id'];
+        $name = $row['name'];
+        $email = $row['email'];
+        $role = $row['role'];
+        $pass = $row['pass'];
+        $phone = $row['phone'];
+
+        $customer = <<<DELIMETER
+
+
+     <tr>
+            <td>{$name}</td>
+            <td>{$email}</td>
+            <td>{$phone}</td>
+            <td>
+                <div class="btn-group " >
+                    <button type="button" class="btn btn-success btn-xs dropdown-toggle" data-toggle="dropdown">
+                        <span class="caret"></span>
+                        <span class="sr-only">Toggle Dropdown</span>
+                    </button>
+                    <ul class="dropdown-menu" role="menu">
+                        <li><a href="#"><i class="fa fa-eye"></i> View Details</a></li>
+                        <li><a href="#"><i class="fa fa-edit"></i> Update</a></li>
+                        <li class="divider" ></li>
+                        <li><a href="#" class="text-red" ><i class="fa fa-trash"></i> Delete</a></li>
+
+                    </ul>
+                </div>
+            </td>
+     </tr>
+DELIMETER;
+
+        echo $customer;
+    }
+}
+
+
+//show all admin
+
+function  show_admin(){
+
+    $query = "SELECT * FROM users WHERE role = 'admin'  AND instance_status = 'A' ";
+    $admin_query = query("$query");
+    confirm($admin_query);
+
+    while($row = fetch_array($admin_query)){
+
+        $users_id = $row['id'];
+        $name = $row['name'];
+        $email = $row['email'];
+        $role = $row['role'];
+        $pass = $row['pass'];
+        $phone = $row['phone'];
+
+        $admin= <<<DELIMETER
+
+
+     <tr>
+            <td>{$name}</td>
+            <td>{$email}</td>
+            <td>{$phone}</td>
+            <td>
+                <div class="btn-group " >
+                    <button type="button" class="btn btn-success btn-xs dropdown-toggle" data-toggle="dropdown">
+                        <span class="caret"></span>
+                        <span class="sr-only">Toggle Dropdown</span>
+                    </button>
+                    <ul class="dropdown-menu" role="menu">
+                        <li><a href="#"><i class="fa fa-eye"></i> View Details</a></li>
+                        <li><a href="#"><i class="fa fa-edit"></i> Update</a></li>
+                        <li class="divider" ></li>
+                        <li><a href="#" class="text-red" ><i class="fa fa-trash"></i> Delete</a></li>
+
+                    </ul>
+                </div>
+            </td>
+     </tr>
+DELIMETER;
+
+        echo $admin;
+    }
+}
 //***************************************************************************************************
 ?>

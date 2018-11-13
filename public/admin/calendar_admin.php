@@ -5,7 +5,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>AdminLTE 2 | Calendar</title>
+    <title>Admin | Calendar</title>
     <!-- Tell the browser to be responsive to screen width -->
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
     <!-- Bootstrap 3.3.7 -->
@@ -62,11 +62,11 @@
                     <div class="box-body">
                         <!-- the events -->
                         <div id="external-events">
-                            <div class="external-event bg-green">Lunch</div>
-                            <div class="external-event bg-yellow">Go home</div>
-                            <div class="external-event bg-aqua">Do homework</div>
-                            <div class="external-event bg-light-blue">Work on UI design</div>
-                            <div class="external-event bg-red">Sleep tight</div>
+                            <div class="external-event bg-green">Wedding Make Up</div>
+                            <div class="external-event bg-yellow">Normal Make Up</div>
+                            <div class="external-event bg-aqua">Artist Make Up</div>
+                            <div class="external-event bg-light-blue">Custom Make Up</div>
+                            <div class="external-event bg-red">Meeting</div>
                             <div class="checkbox">
                                 <label for="drop-remove">
                                     <input type="checkbox" id="drop-remove">

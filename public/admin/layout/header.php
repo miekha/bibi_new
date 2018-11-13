@@ -27,6 +27,10 @@
   <link rel="stylesheet" href="bower_components/bootstrap-daterangepicker/daterangepicker.css">
   <!-- bootstrap wysihtml5 - text editor -->
   <link rel="stylesheet" href="plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css">
+  <!-- iCheck -->
+  <link rel="stylesheet" href="plugins/iCheck/flat/blue.css">
+  <!-- bootstrap wysihtml5 - text editor -->
+  <link rel="stylesheet" href="plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css">
 
     <!-- fullCalendar -->
     <link rel="stylesheet" href="bower_components/fullcalendar/dist/fullcalendar.min.css">

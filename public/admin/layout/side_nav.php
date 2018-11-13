@@ -41,21 +41,25 @@ $name = $_SESSION['name'];
             </span>
               </a>
               <ul class="treeview-menu">
-                  <li><a href=""><i class="fa fa-circle-o"></i> Dashboard</a></li>
+                  <li><a href="dashboard.php"><i class="fa fa-circle-o"></i> Dashboard</a></li>
               </ul>
           </li>
-          <li class="treeview">
-              <a href="new_page.php">
-                  <i class="fa fa-files-o"></i>
-                  <span>Blank Page</span>
-                  <span class="pull-right-container">
-              <i class="fa fa-angle-left pull-right"></i>
-            </span>
-              </a>
-              <ul class="treeview-menu">
-                  <li><a href=""><i class="fa fa-circle-o"></i> Blank Page</a></li>
-              </ul>
-          </li>
+
+<!--          for blank page-->
+
+<!--          <li class="treeview">-->
+<!--              <a href="new_page.php">-->
+<!--                  <i class="fa fa-files-o"></i>-->
+<!--                  <span>Blank Page</span>-->
+<!--                  <span class="pull-right-container">-->
+<!--              <i class="fa fa-angle-left pull-right"></i>-->
+<!--            </span>-->
+<!--              </a>-->
+<!--              <ul class="treeview-menu">-->
+<!--                  <li><a href="new_page.php"><i class="fa fa-circle-o"></i> Blank Page</a></li>-->
+<!--              </ul>-->
+<!--          </li>-->
+
           <li class="treeview">
               <a href="#">
                   <i class="fa fa-money"></i>
@@ -81,9 +85,10 @@ $name = $_SESSION['name'];
             </span>
               </a>
               <ul class="treeview-menu">
-                  <li><a href=""><i class="fa fa-circle-o"></i> View Beautician</a></li>
-                  <li><a href=""><i class="fa fa-circle-o"></i> Add Beautician</a></li>
-                  <li><a href=""><i class="fa fa-circle-o"></i> Assign Beautician</a></li>
+                  <li><a href="view_beautician.php"><i class="fa fa-circle-o"></i> View Beautician</a></li>
+                  <li><a href="add_beautician.php"><i class="fa fa-circle-o"></i> Add Beautician</a></li>
+                  <li><a href=""><i class="fa fa-circle-o"></i> Schedule</a></li>
+                  <li><a href=""><i class="fa fa-circle-o"></i> Gallery</a></li>
               </ul>
           </li>
           <li class="treeview">
@@ -95,7 +100,7 @@ $name = $_SESSION['name'];
             </span>
               </a>
               <ul class="treeview-menu">
-                  <li><a href=""><i class="fa fa-circle-o"></i> View Beautician</a></li>
+                  <li><a href="view_cust.php"><i class="fa fa-circle-o"></i> View Customer</a></li>
               </ul>
           </li>
           <li class="treeview">
@@ -108,24 +113,53 @@ $name = $_SESSION['name'];
               </a>
               <ul class="treeview-menu">
                   <li><a href="calendar_admin.php"><i class="fa fa-circle-o"></i> Calendar</a></li>
-                  <li><a href=""><i class="fa fa-circle-o"></i> To Do List</a></li>
+                  <li><a href="todolist.php"><i class="fa fa-circle-o"></i> To Do List</a></li>
+              </ul>
+          </li>
+          <li class="treeview">
+              <a href="#">
+                  <i class="fa fa-envelope"></i>
+                  <span>Mailbox</span>
+                  <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+              </a>
+              <ul class="treeview-menu">
+                  <li><a href="mailbox.php"><i class="fa fa-circle-o"></i> Inbox</a></li>
+                  <li><a href="compose.php"><i class="fa fa-circle-o"></i> Compose</a></li>
+                  <li><a href=""><i class="fa fa-circle-o"></i> Read</a></li>
+              </ul>
+          </li>
+          <li class="treeview">
+              <a href="#">
+                  <i class="fa fa-area-chart"></i>
+                  <span>Report</span>
+                  <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+              </a>
+              <ul class="treeview-menu">
+                  <li><a href=""><i class="fa fa-circle-o"></i> Customer Report</a></li>
+                  <li><a href=""><i class="fa fa-circle-o"></i> Sales Report</a></li>
+              </ul>
+          </li>
+          <li class="treeview">
+              <a href="#">
+                  <i class="fa fa-cogs"></i>
+                  <span>Developer Setting</span>
+                  <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+              </a>
+              <ul class="treeview-menu">
+                  <li><a href="view_admin.php"><i class="fa fa-circle-o"></i> View Admin</a></li>
+                  <li><a href="add_admin.php"><i class="fa fa-circle-o"></i> Add Admin</a></li>
+
               </ul>
           </li>
 
 
 
-        <li class="treeview">
-          <a href="#">
-            <i class="fa fa-table"></i> <span>Tables</span>
-            <span class="pull-right-container">
-              <i class="fa fa-angle-left pull-right"></i>
-            </span>
-          </a>
-          <ul class="treeview-menu">
-            <li><a href="pages/tables/simple.html"><i class="fa fa-circle-o"></i> Simple tables</a></li>
-            <li><a href="pages/tables/data.html"><i class="fa fa-circle-o"></i> Data tables</a></li>
-          </ul>
-        </li>
 
 
 
